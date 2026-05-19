@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metehan Bölükbaşı - ADS-352 Projesi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Görseldeki lila/mavi geçişli arka plan */
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.8);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        main {
+            max-width: 600px;
+            padding: 0 20px;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+
+        /* Bağlantı butonlarının container yapısı */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 280px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .links a:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 15px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Görseldeki mobil uyumluluk (Responsive) ayarları */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            main p { font-size: 1rem; padding: 0 15px; }
+            header img { width: 120px; height: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ADS 352</h1>
+        <h2>Açık kaynak yazılım geliştirme</h2>
+    </header>
+
+    <main>
+        <p>Merhaba! Ben <strong>Metehan</strong>. Bu site ADS-352 Açık Kaynak Yazılım Geliştirme dersi formatında, kişisel çalışmalarımı ve projelerimi listelemek için oluşturulmuştur.</p>
+
+        <div class="links">
+            <a href="mailto:eposta@adresiniz.com" target="_blank">📧 E-posta</a>
+            <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+            <a href="https://github.com" target="_blank">🐙 GitHub</a>
+            <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 ADS-352. Tüm hakları saklıdır.
+    </footer>
+
+</body>
+</html>
